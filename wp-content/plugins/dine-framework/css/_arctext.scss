@@ -1,0 +1,33 @@
+.dine-arctext {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 2px 0 0;
+    text-align: center;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    
+    &:focus {
+        outline: 0;
+    }
+    
+    > span {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+    }
+    &.arctext-done > span {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}

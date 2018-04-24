@@ -1,0 +1,128 @@
+.dine-imagebox {
+    display: block;
+}
+.imagebox-inner {
+    position: relative;
+    overflow: hidden;
+}
+.imagebox-title-wrapper,
+.imagebox-subtitle-wrapper {
+    transition: all .1s ease-out;
+}
+.imagebox-subtitle-wrapper + .imagebox-title-wrapper {
+    margin-top: 24px;
+}
+.dine-imagebox.has-link .imagebox-inner:hover {
+    .bg-thumb {
+        transform: scale(1.01);
+    }
+    .imagebox-title-wrapper {
+        transform: translate(0,5px);
+    }
+    .imagebox-subtitle-wrapper {
+        transform: translate(0,-5px);
+    }
+}
+.bg-thumb {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 7;
+    @include transition( all .6s ease-out );
+}
+.bg-thumb .bg-element {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-thumb .height-element {
+    display: block;
+    padding-bottom: 50%;
+}
+.imagebox-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 8;
+}
+
+.imagebox-text {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    @include transform( translate( 0, -50%) );
+}
+.imagebox-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: inherit;
+    display: inline-block;
+}
+.title-weight-300 .imagebox-title {
+    font-weight: 300;
+}
+.title-weight-400 .imagebox-title {
+    font-weight: 400;
+}
+.title-weight-700 .imagebox-title {
+    font-weight: 700;
+}
+.imagebox-subtitle {
+    color: inherit;
+    margin: 0;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+/* Animation
+------------------------------------------ */
+.dine-imagebox.has-animation {
+    
+    .imagebox-title,
+    .imagebox-subtitle,
+    .bg-thumb {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s $ease-out-back;
+    }
+    .imagebox-subtitle {
+        transition-delay: .3s;
+        transform: translate(0,10px);
+    }
+    .imagebox-title {
+        transition-delay: .4s;
+        transform: translate(0,15px);
+    }
+    
+    &.running {
+        .bg-thumb {
+            opacity: 1;
+            visibility: visible;
+        }
+        .imagebox-title,
+        .imagebox-subtitle {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0,0);
+        }
+    }
+}

@@ -1,0 +1,82 @@
+/* Button
+-------------------------------------------------------------------------------------- */
+.dine-button {
+    display: inline-block;
+    margin: 0 10px 5px 0;
+    vertical-align: bottom;
+    
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    
+    
+    background-image: none;
+    @include user-select(none);
+}
+.dine-btn {
+    
+    @include display(flex);
+    @include align-content(center);
+    @include align-items(center);
+    @include justify-content(center);
+    text-align: center;
+    
+    i {
+        margin-left: 8px;
+        display: inline-block;
+        line-height: inherit;
+        font-size: inherit;
+    }
+}
+
+/* Alignment
+--------------------- */
+.dine-button.button-center,
+.dine-button.button-right {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+.dine-button.button-right {
+    text-align: right;
+    margin: 0;
+}
+.dine-button.button-center .dine-btn,
+.dine-button.button-right .dine-btn {
+    @include display(inline-flex);
+}
+
+    /* block */
+.dine-button.button-block {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Different Styles
+--------------------- */
+
+    /* outline */
+.dine-btn.btn-outline,
+.dine-btn.btn-outline:hover {
+    background: none;
+    color: #111;
+    border: 2px solid;
+    line-height: 40px;
+    box-shadow: none;
+}
+
+    /* fill */
+.dine-btn.btn-fill {
+    background: none;
+    color: #111;
+    border: 2px solid;
+    line-height: 40px;
+    box-shadow: none;
+    
+    &:hover {
+        color: #fff;
+        background: #111;
+        border-color: #111;
+    }
+}

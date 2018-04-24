@@ -1,0 +1,61 @@
+=== v1.0.2 ===
+- fix off canvas menu on android devices
+- fix text slider to big on mobile
+
+=== v1.1 ===
+- WooCommerce Compatible
+- fix overlay issue for row
+- tripadvisor icon if domain not tripadvisor.com
+- yelp icon if domain not yelp.com
+
+=== v1.2 ===
+- sticky header on mobile
+- compatible with WooCommerce v3.1.x
+- fix text slider
+- fix WooCommerce checkout issue when select country, state..
+
+=== v1.3 ===
+- Fix opentable timetable issue
+- Update Visual Composer
+- Compatible with WP 4.8.2
+- Compatible with WooCommerce 3.1
+- Google Map API Key Option
+- Reduce size for image in gallery element
+- Fix z-index issue on checkout page
+
+=== v1.3.1 ===
+- Update Visual Composer to v5.4.5
+- Compatible with WP 4.9
+- Compatible with WooCommerce 3.2
+
+=== v2.0 ===
+- more blog layouts: standard / grid / list
+- add_image_size( 'dine_grid' )
+- option for star icon on pages
+- option for star icon in footer
+- combine js files to get a smaller number of files
+- more options for menu: food image and option for highlighting.
+- add instagram element for page builder
+- add counter element for page builder
+- add list element for page builder
+- improve slider element (much more options, fullscreen & carousel & caption)
+- improve gallery element (metro gallery)
+- add more templates for contact form
+- fully support Restaurant Reservations plugin https://wordpress.org/plugins/restaurant-reservations/
+- add more font weights to css classes: extralight, thin
+- option for change the icon
+- add flexible_text class for big text to be resized
+- add default visual composer templates for ease of use
+- compatible with WooCommerce v3.2
+- Update Documentation
+
+=== v2.1 - Future Plan ===
+// gravity form compatible
+// wpml compatible
+// sticky logo
+// portfolio???
+// fix scroll issue on mobile
+// fix parallax issue on wide screens
+// text color option for food menu
+// docs
+// one-click installation

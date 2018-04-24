@@ -1,0 +1,20 @@
+.gmap-wrapper {
+    background: #f0f0f0;
+    background: rgba(0,0,0,.08);
+    overflow: hidden;
+    position: relative;
+}
+.dine-gmap {
+    height: 320px;
+//    border: 1px solid rgba(0,0,0,.1);
+}
+.gm-style {
+    font-family: inherit !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}

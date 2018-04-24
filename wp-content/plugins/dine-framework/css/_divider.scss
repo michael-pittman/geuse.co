@@ -1,0 +1,67 @@
+/* General
+--------------------- */
+.dine-divider {
+    @include clearfix;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+}
+.divider-inner {
+    position: relative;
+    display: inline-block;
+}
+.divider-line {
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid;
+    width: 90px;
+    
+    &.line-left {
+        right: 100%;
+        margin-right: 10px;
+    }
+    &.line-right {
+        left: 100%;
+        margin-left: 10px;
+    }
+}
+
+.dine-divider .image {
+    display: block;
+    width: 50px;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.dine-divider.has-animation {
+    .icon-wrapper {
+        opacity: 0;
+        visibility: hidden;
+        @include transition( all .3s ease-out );
+    }
+    .divider-line {
+        @include transform( scale( 0, 1 ) );
+        @include transition( all .4s $ease-out-back );
+        @include transition-delay( .3s );
+        
+        &.line-left {
+            @include transform-origin( 100% 0 );
+        }
+        
+        &.line-right {
+            @include transform-origin( 0 0 );
+        }
+    }
+    
+    &.running {
+        .icon-wrapper {
+            opacity: 1;
+            visibility: visible;
+        }
+        .divider-line {
+            @include transform( scale( 1, 1 ) );
+        }
+    }
+}

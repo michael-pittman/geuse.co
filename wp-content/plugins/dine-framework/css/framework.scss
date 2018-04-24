@@ -1,0 +1,78 @@
+@import "bourbon/bourbon";
+@import "media-queries";
+
+@import "base";
+@import "jquery-ui";
+@import "flexslider";
+
+// VC Elements
+@import "row";
+
+// Dine Elements
+@import "arctext";
+@import "button";
+@import "counter";
+@import "diamond";
+@import "divider";
+@import "gallery";
+@import "gmap";
+@import "heading";
+@import "helpers";
+@import "icon";
+@import "imagebox";
+@import "menu";
+@import "opentable";
+@import "social";
+@import "text-slider";
+@import "testimonial";
+
+// Responsive Elements
+@import "screens/tablet";
+@import "screens/phone";
+
+.wpb_heading {
+    margin: 0 0 20px;
+}
+
+/* Animation
+--------------------- */
+.dine-animation-element {
+    @include transition( all .4s $ease-out-back );
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    &.animation-fade {
+        opacity: 0;
+        visibility: hidden;
+        
+        @include transition( all .6s ease-out );
+    }
+    
+    &.animation-top {
+        @include transform( translate(0,-10px) );
+    }
+    &.animation-bottom {
+        @include transform( translate(0,10px) );
+    }
+    &.animation-left {
+        @include transform( translate(-10px,0) );
+    }
+    &.animation-right {
+        @include transform( translate(10px,0) );
+    }
+    
+    &.running {
+        
+        opacity: 1;
+        visibility: visible;
+    
+        &.animation-top,
+        &.animation-bottom,
+        &.animation-left,
+        &.animation-right {
+            @include transform( translate(0,0) );
+        }
+        
+    }
+}

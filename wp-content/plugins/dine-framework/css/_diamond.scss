@@ -1,0 +1,60 @@
+.dine-diamond {
+    
+    margin: 0 auto;
+    width: 212px;
+    height: 212px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    
+    .diamond-bg {
+        background: #111;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        transform-origin: center center;
+        
+        &:before {
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px dashed;
+            // color: white;
+            opacity: .4;
+        }
+    }
+    
+    .diamond-content {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 20;
+        font-size: .9em;
+        margin: 0 auto;
+        max-width: 70%;
+        
+        p {
+            margin-bottom: 0;
+            & + p {
+                margin-top: 6px;
+            }
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: inherit;
+            margin: 0;
+        }
+        
+    }
+    
+}

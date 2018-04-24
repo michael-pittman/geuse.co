@@ -1,0 +1,362 @@
+# Made by WiThemes
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dine-framework\n"
+"POT-Creation-Date: 2017-12-25 04:32:29+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: addons/arctext/params.php:35 addons/booking/params.php:6
+#: addons/diamond/params.php:52 addons/divider/params.php:100
+#: addons/gallery/params.php:59 addons/gmap/params.php:91
+#: addons/heading/params.php:35 addons/imagebox/params.php:64
+#: addons/instagram/params.php:72 addons/slider/params.php:88
+#: addons/text_slider/params.php:78
+msgid "Css"
+msgstr ""
+
+#: addons/arctext/params.php:37 addons/booking/params.php:8
+#: addons/diamond/params.php:54 addons/divider/params.php:102
+#: addons/gallery/params.php:61 addons/gmap/params.php:93
+#: addons/heading/params.php:37 addons/imagebox/params.php:66
+#: addons/instagram/params.php:74 addons/slider/params.php:90
+#: addons/text_slider/params.php:80
+msgid "Design Options"
+msgstr ""
+
+#: addons/arctext/register.php:16
+msgid "Arctext"
+msgstr ""
+
+#: addons/arctext/register.php:17
+msgid "Displays arc text"
+msgstr ""
+
+#: addons/booking/register.php:17
+msgid "Booking"
+msgstr ""
+
+#: addons/booking/register.php:18
+msgid "Displays Booking Form"
+msgstr ""
+
+#: addons/button/register.php:16
+msgid "Button"
+msgstr ""
+
+#: addons/button/register.php:17
+msgid "Displays Button"
+msgstr ""
+
+#: addons/counters/params.php:20
+msgid "Counter Items"
+msgstr ""
+
+#: addons/counters/params.php:22
+msgid "Enter value for each counter item"
+msgstr ""
+
+#: addons/counters/params.php:27
+msgid "Number"
+msgstr ""
+
+#: addons/counters/params.php:29
+msgid "Accept only whole numbers like 25, 1972.."
+msgstr ""
+
+#: addons/counters/params.php:34 addons/opentable/params.php:5
+msgid "Title"
+msgstr ""
+
+#: addons/counters/params.php:41 addons/menu/params.php:26
+msgid "Description"
+msgstr ""
+
+#: addons/counters/register.php:17
+msgid "Counters"
+msgstr ""
+
+#: addons/counters/register.php:18
+msgid "Displays Counters"
+msgstr ""
+
+#: addons/diamond/register.php:17
+msgid "Diamond"
+msgstr ""
+
+#: addons/diamond/register.php:18
+msgid "Displays Diamond"
+msgstr ""
+
+#: addons/divider/register.php:17
+msgid "Divider"
+msgstr ""
+
+#: addons/divider/register.php:18
+msgid "Displays Divider"
+msgstr ""
+
+#: addons/gallery/register.php:16
+msgid "Gallery"
+msgstr ""
+
+#: addons/gallery/register.php:17
+msgid "Displays Image Gallery"
+msgstr ""
+
+#: addons/gmap/register.php:17
+msgid "Google Map"
+msgstr ""
+
+#: addons/gmap/register.php:18
+msgid "Displays Google Map"
+msgstr ""
+
+#: addons/gmap/register.php:41
+msgid "Google Maps API Key is required!"
+msgstr ""
+
+#: addons/gmap/register.php:49
+msgid "Unable to communicate with Google."
+msgstr ""
+
+#: addons/gmap/register.php:52
+msgid "Google did not return a 200."
+msgstr ""
+
+#: addons/gmap/register.php:57
+msgid "Google Map API has returned invalid data."
+msgstr ""
+
+#: addons/heading/register.php:16 addons/menu/params.php:5
+msgid "Heading"
+msgstr ""
+
+#: addons/heading/register.php:17
+msgid "Displays a stylish heading"
+msgstr ""
+
+#: addons/icon/register.php:17
+msgid "Icon"
+msgstr ""
+
+#: addons/icon/register.php:18
+msgid "Displays Icon"
+msgstr ""
+
+#: addons/imagebox/register.php:17
+msgid "Imagebox"
+msgstr ""
+
+#: addons/imagebox/register.php:18
+msgid "Displays Imagebox"
+msgstr ""
+
+#: addons/instagram/params.php:29
+msgid "Half Hours"
+msgstr ""
+
+#: addons/instagram/params.php:30
+msgid "An Hour"
+msgstr ""
+
+#: addons/instagram/params.php:31
+msgid "Two Hours"
+msgstr ""
+
+#: addons/instagram/params.php:32
+msgid "Four Hours"
+msgstr ""
+
+#: addons/instagram/params.php:33
+msgid "A Day"
+msgstr ""
+
+#: addons/instagram/params.php:34
+msgid "A Week"
+msgstr ""
+
+#: addons/instagram/register.php:16
+msgid "Instagram"
+msgstr ""
+
+#: addons/instagram/register.php:17
+msgid "Displays Instagram Grid"
+msgstr ""
+
+#: addons/menu/params.php:12
+msgid "Menu Items"
+msgstr ""
+
+#: addons/menu/params.php:14
+msgid "Enter value for each menu item"
+msgstr ""
+
+#: addons/menu/params.php:19 addons/testimonials/params.php:11
+msgid "Name"
+msgstr ""
+
+#: addons/menu/params.php:32
+msgid "Price"
+msgstr ""
+
+#: addons/menu/params.php:38
+msgid "Image"
+msgstr ""
+
+#: addons/menu/params.php:45
+msgid "Highlight this"
+msgstr ""
+
+#: addons/menu/register.php:16
+msgid "Menu"
+msgstr ""
+
+#: addons/menu/register.php:17
+msgid "Displays a food menu"
+msgstr ""
+
+#: addons/opentable/frontend.php:33
+msgid "1 person"
+msgstr ""
+
+#: addons/opentable/frontend.php:35
+msgid "%s persons"
+msgstr ""
+
+#: addons/opentable/frontend.php:51
+msgid "Powered by OpenTable"
+msgstr ""
+
+#: addons/opentable/params.php:13
+msgid "Restaurant ID"
+msgstr ""
+
+#: addons/opentable/register.php:16
+msgid "Open Table"
+msgstr ""
+
+#: addons/opentable/register.php:17
+msgid "Displays a reservation form"
+msgstr ""
+
+#: addons/slider/register.php:17
+msgid "Slider"
+msgstr ""
+
+#: addons/slider/register.php:18
+msgid "Displays Image Slider"
+msgstr ""
+
+#: addons/testimonials/params.php:4 addons/testimonials/register.php:16
+msgid "Testimonials"
+msgstr ""
+
+#: addons/testimonials/params.php:6
+msgid "Enter value for each testimonial"
+msgstr ""
+
+#: addons/testimonials/params.php:18 inc/shortcode.php:99
+msgid "Content"
+msgstr ""
+
+#: addons/testimonials/params.php:24
+msgid "From"
+msgstr ""
+
+#: addons/testimonials/params.php:30
+msgid "Avatar"
+msgstr ""
+
+#: addons/testimonials/params.php:36
+msgid "Rating"
+msgstr ""
+
+#: addons/testimonials/params.php:37
+msgid "A number between 0 - 5, eg. 4.8"
+msgstr ""
+
+#: addons/testimonials/register.php:17
+msgid "Displays testimonials"
+msgstr ""
+
+#: addons/text_slider/params.php:5
+msgid "Autoplay Timer?"
+msgstr ""
+
+#: addons/text_slider/params.php:13
+msgid "Text Color"
+msgstr ""
+
+#: addons/text_slider/params.php:20
+msgid "Font Size"
+msgstr ""
+
+#: addons/text_slider/params.php:26
+msgid "Effect?"
+msgstr ""
+
+#: addons/text_slider/params.php:41
+msgid "Text"
+msgstr ""
+
+#: addons/text_slider/params.php:42
+msgid "Each sentence per line. Press \"enter\" to have a new line."
+msgstr ""
+
+#: addons/text_slider/register.php:16
+msgid "Text Slider"
+msgstr ""
+
+#: addons/text_slider/register.php:17
+msgid "Displays a text slider"
+msgstr ""
+
+#: inc/helpers.php:198
+msgid "None"
+msgstr ""
+
+#: inc/helpers.php:199
+msgid "Solid"
+msgstr ""
+
+#: inc/helpers.php:200
+msgid "Dotted"
+msgstr ""
+
+#: inc/helpers.php:201
+msgid "Dashed"
+msgstr ""
+
+#: inc/helpers.php:202
+msgid "Double"
+msgstr ""
+
+#: inc/image.php:53
+msgid "Open prettyPhoto"
+msgstr ""
+
+#: inc/image.php:54
+msgid "Open Lightbox"
+msgstr ""
+
+#: inc/shortcode.php:99
+msgid "Dine"
+msgstr ""

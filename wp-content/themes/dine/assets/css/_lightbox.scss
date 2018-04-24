@@ -1,0 +1,295 @@
+i.mfp-gallery .mfp-image-holder .mfp-figure {
+    cursor: default;
+}
+.mfp-bg {
+    z-index: 11042;
+}
+.mfp-wrap {
+    z-index: 11043;
+}
+.mfp-container {
+    padding: 0;
+}
+
+/* Loader
+------------------------ */
+.mfp-preloader {
+    display: block;
+    direction: ltr;
+    text-indent: -9999px;
+    
+    @extend .cssload-container;
+    margin: -20px 0 0 -20px;
+    left: 50%;
+    z-index: 99999;
+    
+    &:before {
+        display: block;
+        content: "";
+        @extend .cssload-speeding-wheel;
+        position: absolute;
+    }
+    
+    background: none;
+}
+.mfp-s-error .mfp-preloader {
+    text-indent: 0;
+    background: none;
+}
+.mfp-s-error .mfp-preloader a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Animation
+------------------------ */
+.mfp-gallery {
+    .mfp-figure {
+        opacity: 0;
+        transform: scale(.98);
+        @include transition( all .4s $ease-out-back );
+    }
+    &.mfp-image-loaded .mfp-figure {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Frame
+------------------------ */
+.mfp-bg {
+    opacity: .95;
+    background: #000;
+    color: #fff;
+    @include transition( all .6s );
+}
+.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+.mfp-figure:after {
+    display: none;
+}
+.mfp-iframe-scaler iframe {
+    box-shadow: none;
+    background: none;
+}
+.mfp-wrap {
+    color: #fff;
+}
+
+/* Video
+------------------------ */
+.mfp-content .wp-video {
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+.mfp-content .wp-video-shortcode {
+    margin: 0;
+}
+
+/* Cursor
+------------------------ */
+.mfp-zoom-out-cur, 
+.mfp-zoom-out-cur
+.mfp-image-holder .mfp-close {
+    cursor: default;
+}
+
+/* Next / Prev
+------------------------ */
+button.mfp-arrow,
+button.mfp-arrow:hover {
+    display: block;
+    background: none;
+    color: inherit;
+    visibility: visible;
+    top: auto;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 50%;
+    border: 2px solid;
+    left: 30px;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    transition: color .2s ease-out, background .2s ease-out, border .2s ease-out;
+    @include transform(translate(0,-50%));
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+    }
+}
+button.mfp-arrow.mfp-arrow-right {
+    right: 30px;
+    left: auto;
+}
+button.mfp-arrow:before,
+button.mfp-arrow:after {
+    display: none;
+}
+
+button.mfp-arrow {
+    opacity: 1;
+    &:hover {
+        background: $accent;
+        border-color: $accent;
+        color: white;
+    }
+}
+
+/* Close
+------------------------ */
+button.mfp-close,
+.mfp-image-holder .mfp-close, 
+.mfp-iframe-holder .mfp-close {
+    position: fixed;
+    top: 10px;
+    left: auto;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 32px;
+    color: inherit;
+    text-align: center;
+    @include transition( color .3s ease-out );
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: .7;
+    &:hover {
+        opacity: 1;
+        color: inherit;
+    }
+    
+    &:active,
+    &:focus {
+        top: 10px;
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        border-top: 1px solid;
+        width: 20px;
+        margin-left: -10px;
+        transform: rotate(45deg);
+        transform-origin: center center;
+        
+        &.line2 {
+            transform: rotate(-45deg);
+        }
+    }
+}
+button.mfp-close:hover,
+.mfp-image-holder .mfp-close:hover, 
+.mfp-iframe-holder .mfp-close:hover {
+    background: none;
+}
+button.mfp-close i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform( translate(-50%,-50%) );
+}
+
+.admin-bar .mfp-close {
+    top: 42px;
+    &:active,
+    &:focus {
+        top: 42px;
+    }
+}
+.mfp-close-btn-in .mfp-close {
+    color: inherit;
+}
+
+/* Fix MFP click target
+------------------------ */
+body button.mfp-arrow-left:before,
+body button.mfp-arrow-right:before,
+body .mfp-close:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 40;
+    border: none !important;
+    outline: 0;
+    background: none !important;
+    content: "";
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0;
+}
+
+/* Caption
+------------------------ */
+.mfp-title,
+.mfp-counter {
+    color: inherit;
+}
+
+/* TEXT
+------------------------ */
+.mfp-title {
+    line-height: initial;
+}
+.mfp-counter {
+    font-size: inherit;
+    line-height: initial;
+}
+.admin-bar .mfp-content {
+    .royalSlider {
+    }
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    text-align: right;
+    padding: 1em;
+    font-size: .85em;
+    line-height: 1.4;
+    background: rgba(0,0,0,.6);
+    color: white;
+    max-width: 300px;
+    cursor: default;
+    z-index: 30;
+    
+    a {
+        color: inherit;
+        text-decoration: underline;
+        white-space: nowrap;
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+.lightbox-caption-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.lightbox-caption-content {
+    display: block;
+    margin: .5em 0 0;
+}

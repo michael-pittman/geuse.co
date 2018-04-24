@@ -1,0 +1,353 @@
+// phone screen
+@include mq($max-width: 767px) {
+    
+    /* General
+    ------------------------------------------------ */
+    blockquote p br {
+        display: none;
+    }
+    blockquote {
+        padding-left: 20px;
+    }
+    .spacing-4,
+    .spacing-5,
+    .spacing-6,
+    .spacing-7,
+    .spacing-8,
+    .spacing-9,
+    .spacing-10 {
+        letter-spacing: 2px;
+    }
+    
+    /* Header
+    ------------------------------------------------ */
+    
+    
+    /* Basic Structure
+    ------------------------------------------------ */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        @include flex-flow( row wrap );
+    }
+    .col {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        
+        & + .col {
+            margin-top: 1em;
+        }
+    }
+    div.wpcf7 .row {
+        margin-bottom: 20px;
+        .col + .col {
+            margin-top: 20px;
+        } 
+    }
+    
+    .container {
+        width: 90%;
+        min-width: 300px;
+    }
+    
+    /* Layout
+    ------------------------------------------------ */
+    #page-wrapper .container {
+        display: block;
+    }
+    #primary,
+    #secondary {
+        padding: 40px 0;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #page-header.dine-parallax {
+        padding: 80px 0;
+    }
+    .header-transparent ~ #content #page-header.dine-parallax {
+        padding-top: 120px;
+    }
+    #page-title {
+        font-size: 50px;
+    }
+    #page-subtitle {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    
+    /* Blog
+    ------------------------------------------------ */
+    .entry-title {
+        font-size: 32px;
+    }
+    .entry-meta {
+        letter-spacing: 1px;
+    }
+    
+    /* Single
+    ------------------------------------------------ */
+    .comment-list ol.children {
+        margin: 0 0 0 1em;
+    }
+    .comment-meta {
+        .comment-author {
+            .fn {
+                margin-left: 12px;
+                letter-spacing: 1px;
+                font-size: 11px;
+            }
+            img {
+                display: block;
+                float: left;
+                width: 32px;
+            }
+        }
+        .comment-metadata {
+            letter-spacing: 0;
+        }
+    }
+    .comment-meta .comment-metadata,
+    .comment-content,
+    .comment-awaiting-moderation {
+        margin-left: 44px;
+    }
+    .comment-form-author, 
+    .comment-form-email,
+    .comment-form-url {
+        width: 100%;
+        margin-right: 0;
+    }
+    .dine-heading .heading-title.related-heading {
+        width: 100%;
+    }
+    .entry-tags {
+        letter-spacing: 0;
+        font-size: 12px;
+        a {
+            padding: 2px 6px;
+        }
+    }
+    
+    /* Blog Grid -> 1 column
+    ------------------------------------------------ */
+    .blog-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dine-post-grid {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* Blog List -> smaller thumbnail
+    ------------------------------------------------ */
+    .dine-post-list .post-thumbnail {
+        width: 120px;
+        margin-right: 1em;
+    }
+    .dine-post-list .grid-title {
+        font-size: 1.2em;
+    }
+    .list-header {
+        margin: 0 0 .7em;
+    }
+    
+    /* Footer
+    ------------------------------------------------ */
+    // Footer --> 1 column all
+    .footer-sidebar-wrapper {
+        display: block;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .footer-col {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        
+        & + .footer-col {
+            border: 0;
+            margin-top: 30px;
+        }
+    }
+    #footer-sidebar {
+        .footer-col {
+            padding-top: 0;
+            padding-bottom: 0;
+            & + .footer-col {
+                margin-top: 24px;
+            }
+        }
+    }
+    
+    // Footer Bottom
+    #footer-bottom {
+        .container {
+            display: block;
+            text-align: center;
+        }
+        #footernav {
+            display: table;
+            margin: 0 auto;
+        }
+    }
+    #footernav li + li:before {
+        margin: 0 5px;
+    }
+    #scrollup {
+        display: none;
+    }
+    
+    
+    /* WooCommerce
+    ------------------------------------------------ */
+    // WooCommerce to 2 columns
+    .woocommerce-page.columns-4 ul.products li.product, 
+    .woocommerce.columns-4 ul.products li.product,
+    .woocommerce-page.columns-3 ul.products li.product, 
+    .woocommerce.columns-3 ul.products li.product {
+        width: 49.5%;
+    }
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class*=columns-] ul.products li.product, .woocommerce[class*=columns-] ul.products li.product {
+        margin-bottom: 0;
+    }
+    
+    .carousel-cell-caption {
+        left: 15%;
+        right: 15%;
+    }
+    
+}
+
+@include mq($max-width: 480px) {
+    
+    /* Typography
+    ------------------------------------------------ */
+    #{$all-buttons},
+    .dine-btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 36px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    
+    .gallery {
+        margin: -.4em -.2em 20px
+    }
+    .gallery-item {
+        padding: .4em .2em 0;
+    }
+    
+    /* Header
+    ------------------------------------------------ */
+    
+    /* Footer
+    ------------------------------------------------ */
+    #footernav {
+        li {
+            letter-spacing: 0;
+        }
+        a {
+            letter-spacing: 0;
+        }
+    }
+    
+    /* Layout
+    ------------------------------------------------ */
+    .archive #page-title,
+    #page-title {
+        font-size: 32px;
+        letter-spacing: 0px;
+    }
+    #page-subtitle {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    
+    /* Blog
+    ------------------------------------------------ */
+    .sticky {
+        padding: 12px;
+    }
+    a.more-link {
+        padding: 6px 12px;
+        letter-spacing: 1px;
+    }
+    .entry-meta {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .entry-title {
+        font-size: 24px;
+    }
+    
+    /* Single Post
+    ------------------------------------------------ */
+    .comment-list {
+        li.comment {
+            .comment-body {
+                display: block;
+            }
+            .comment-meta {
+                width: 100%;
+                margin: 0 0 10px;
+            }
+        }
+    }
+    
+    .woocommerce-page.columns-4 ul.products li.product, 
+    .woocommerce.columns-4 ul.products li.product,
+    .woocommerce-page.columns-3 ul.products li.product, 
+    .woocommerce.columns-3 ul.products li.product,
+    .woocommerce-page.columns-2 ul.products li.product, 
+    .woocommerce.columns-2 ul.products li.product {
+        width: 100%;
+    }
+    #coupon_code,
+    .woocommerce table.cart td.actions .coupon .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Booking
+    ------------------------------------------------ */
+    body .rtb-booking-form {
+        button[type="submit"] {
+        }
+        > form {
+            margin: 0 -10px;
+        }
+        fieldset {
+            padding: 0 10px;
+        }
+        .reservation,
+        .contact {
+            width: 100%;
+            > legend {
+                font-size: 1.2em;
+                letter-spacing: 0;
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,56 @@
+// tablet screen like iPad, 768px - 1024px
+// all screens lower than 1280px will be displayed as 1024px wide
+@include mq($max-width: 1279px) {
+    
+    // Heading
+    .heading-title {
+        font-size: 60px;
+    }
+    .heading-subtitle {
+        font-size: 16px;
+    }
+    
+}
+
+/**
+ * Portrait Tablet
+ * target screen 768px
+ */
+@include mq($max-width: 1023px) {
+ 
+    // Imagebox
+    .imagebox-title {
+        // font-size: 16px;
+        // letter-spacing: 1px;
+    }
+    
+    // Menu
+    .dine-menu-heading {
+        font-size: 36px;
+    }
+    
+    // Counter
+    .dine-counters {
+        &.column-5,
+        &.column-6 {
+            .dine-counter {
+                width: 33.33%;
+                
+                &:nth-child(3n+1) {
+                    border-left: none !important;
+                }
+            }
+        }
+        
+        &.column-4 {
+            .dine-counter {
+                width: 50%;
+                
+                &:nth-child(2n+1) {
+                    border-left: none !important;
+                }
+            }
+        }
+    }
+    
+}

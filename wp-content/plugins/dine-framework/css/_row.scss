@@ -1,0 +1,41 @@
+.vc_row[data-vc-full-width],
+.vc_section[data-vc-full-width] {
+    position: relative;
+    z-index: 10;
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    @include transition( opacity .6s, visibility .6s );
+    
+    &[data-vc-full-width-init="true"] {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.row-overlay,
+.column-overlay {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+// Margin General
+#content .wpb_alert p:first-child,
+#content .wpb_text_column p:first-child, 
+.vc_message_box>p:first-of-type,
+.wpb_alert p:first-child, 
+.wpb_text_column p:first-child {
+    margin-top: 0;
+}
+
+.vc_section,
+.vc_row {
+    &.jarallax {
+        background-color: transparent !important;
+    }
+}

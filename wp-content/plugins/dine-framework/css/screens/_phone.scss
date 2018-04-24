@@ -1,0 +1,132 @@
+// phone screen
+@include mq($max-width: 767px) {
+    
+    // Visual Composer base margin
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+        margin-bottom: 24px;
+    }
+    
+    // Heading
+    .heading-title {
+        font-size: 48px;
+    }
+    .heading-subtitle {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .heading-ornament img {
+        width: 80px;
+    }
+    
+    // Imagebox
+    .imagebox-title {
+        // font-size: 20px;
+    }
+    
+    // Gallery
+    .dine-gallery {
+        margin: -6px -3px 0;
+    }
+    .dine-gallery-item {
+        padding: 6px 3px 0;
+    }
+    .dine-gallery.column-4 {
+        .dine-gallery-item {
+            width: 50%;
+        }
+    }
+    
+    .dine-gallery.column-5,
+    .dine-gallery.column-6 {
+        .dine-gallery-item {
+            width: 33.33%;   
+        }
+    }
+    
+    .dine-gallery.column-7,
+    .dine-gallery.column-8 {
+        .dine-gallery-item {
+            width: 25%;
+        }
+    }
+    
+    .dine-gallery.column-9,
+    .dine-gallery.column-10 {
+        .dine-gallery-item {
+            width: 20%;
+        }
+    }
+    
+    // Instagram
+    .dine-instagram {
+        &.column-5,
+        &.column-6,
+        &.column-7,
+        &.column-9 {
+            .dine-instagram-item {
+                width: 33.33%;
+            }
+        }
+        &.column-8 {
+            .dine-instagram-item {
+                width: 25%;
+            }
+        }
+    }
+    
+    .dine-instagram-item {
+        padding: 10px 5px 0;
+    }
+    .dine-instagram {
+        margin: -10px -5px 0;
+    }
+    
+    // Counter
+    // collapse to 50%
+    .dine-counters {
+        &.column-3,
+        &.column-5,
+        &.column-6 {
+            .dine-counter {
+                width: 50%;
+            }
+        }
+    }
+    .dine-counters .dine-counter {
+        border: 0;
+    }
+    
+}
+
+@include mq($max-width: 480px) {
+    
+    .dine-gallery.column-3 {
+        .dine-gallery-item {
+            width: 100%;
+        }
+    }
+    
+    // Heading
+    .heading-title {
+        font-size: 36px !important;
+    }
+    .heading-subtitle {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    // Counter
+    // all to 100%
+    .dine-counters {
+        &.column-2,
+        &.column-3,
+        &.column-4,
+        &.column-5,
+        &.column-6 {
+            .dine-counter {
+                width: 100%;
+            }
+        }
+    }
+    
+}

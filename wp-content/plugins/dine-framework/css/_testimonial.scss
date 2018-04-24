@@ -1,0 +1,122 @@
+.dine-testimonials {
+    .slides {
+        @include clearfix;
+    }
+    .flex-control-nav {
+        position: static;
+        margin: 1em 0 0;
+    }
+    .flex-control-paging li a {
+        outline: 0;
+        width: 8px;
+        height: 8px;
+        box-shadow: none;
+        
+        background: none;
+        border: 1px solid #000;
+        
+        transition: all .3s ease-out;
+        
+        &:hover {
+            background: $accent;
+        }
+        &.flex-active {
+            border-color: $accent;
+            background: $accent;
+        }
+    }
+}
+
+.dine-testimonial {
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.testimonial-content {
+    font-size: 1.4em;
+    
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    
+    margin: 0 auto;
+    max-width: 600px;
+    
+    background: url(../images/quote.png) top center no-repeat;
+    background-size: 32px;
+    padding-top: 48px;
+}
+.testimonial-meta {
+    overflow: hidden;
+    display: block;
+    margin: 1.5em auto 0;
+    text-align: center;
+}
+.testimonial-avatar {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.testimonial-meta-text {
+    overflow: hidden;
+    flex: none;
+    margin-top: 12px;
+}
+.testimonial-name {
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+}
+.testimonial-from {
+    color: #999;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.testimonial-rating {
+    
+    display: table;
+    margin: 1em auto 0;
+    
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    line-height: 1;
+    font-size: 1em;
+    width: 4.8em;
+    font-family: FontAwesome;
+    
+    span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+        
+        &:before {
+            content: '\f005\f005\f005\f005\f005';
+            top: 0;
+            position: absolute;
+            left: 0;
+            color: $accent;
+        }
+    }
+    
+    &:before {
+        content: '\f005\f005\f005\f005\f005';
+        color: #ddd;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+}

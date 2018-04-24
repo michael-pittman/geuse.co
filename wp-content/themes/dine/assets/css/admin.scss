@@ -1,0 +1,344 @@
+@import 'bourbon/_bourbon';
+    
+/* General Admin Settings
+-------------------------------------------------------------------------------------- */
+.red {
+    color: red;
+}
+
+/* TGMA General
+--------------------- */
+#setting-error-tgmpa {
+    min-width: 800px;
+    display: block;
+}
+
+/* Input Placeholder
+--------------------- */
+input {
+    @include placeholder {
+        color: #ccc;
+    }
+}
+
+/* Image Uploader
+-------------------------------------------------------------------------------------- */
+.image-holder {
+    max-width: 300px;
+    margin: 0 0 20px;
+    border: 2px dashed #ccc;
+    background: #fafafa;
+    padding: 10px;
+    position: relative;
+}
+.image-holder img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.image-holder .remove-image-button {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    background: rgba(255,255,255,.9);
+    color: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    @include transition(all .1s);
+    font-size: 20px;
+}
+.image-holder .remove-image-button:hover {
+    background: rgba(255,255,255,1);
+}
+.image-holder img + .remove-image-button {
+    display: block;
+}
+
+/* File Uploader
+-------------------------------------------------------------------------------------- */
+.file-holder {
+    
+    display: none;
+    &.has-file {
+        display: block;
+    }
+    
+    max-width: 300px;
+    margin: 0 0 20px;
+    position: relative;
+    
+    .file-icon {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        i {
+            display: block;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            font-size: 60px;
+            text-align: left;
+        }
+    }
+    
+    .remove-file-button {
+        display: none;
+        position: absolute;
+        bottom: 7px;
+        left: 30px;
+        text-decoration: none;
+        background: rgba(255,255,255,.9);
+        color: black;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        @include transition(all .1s);
+        font-size: 16px;
+        
+        &:hover {
+            background: rgba(255,255,255,1);
+        }
+    }
+    
+    &.has-file .remove-file-button {
+        display: block;
+    }
+    
+}
+
+/* Multi-image
+-------------------------------------------------------------------------------------- */
+.images-holder {
+    margin: 0 -5px 10px;
+    
+    @include clearfix;
+}
+.images-holder .image-unit,
+.images-holder .image-unit-placeholder {
+    margin: 0;
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+    cursor: move;
+}
+.images-holder .image-unit-placeholder {
+    position: relative;
+    height: 98px;
+    width: 98px;
+}
+.images-holder .image-unit-placeholder:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 1px dashed #999;
+    background: #eaf7fd;
+}
+.images-holder .image-unit img {
+    width: 88px;
+    height: 88px;
+    display: block;
+}
+
+    /* remove button */
+.images-holder .image-unit .remove-image-unit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    background: rgba(255,255,255,.9);
+    color: black;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.images-holder .image-unit:hover .remove-image-unit {
+    background: white;
+}
+
+/* Metabox
+-------------------------------------------------------------------------------------- */
+
+/* Metabox Layout
+--------------------- */
+.dine-metabox {
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    @include display(flex);
+    @include align-items(stretch);
+}
+.dine-metabox * {
+    box-sizing: inherit;
+}
+.dine-metabox .button-primary {
+    box-sizing: content-box;
+}
+.dine-info {
+    padding: 10px;
+    padding: 10px;
+    color: #6b94c1;
+    border: 1px solid #cad7e0;
+    background: #f3faff;
+}
+
+/* ----- LAYOUT ------ */
+.metabox-tabs {
+    width: 24%;
+    float: left;
+}
+.metabox-fields {
+    padding: 10px 20px;
+    width: 76%;
+    float: left;
+}
+
+// ONLY DINE METABOX SETTINGS
+#poststuff #page-settings .inside,
+#poststuff #portfolio-settings .inside,
+#poststuff #format-settings .inside,
+#poststuff #post-settings .inside {
+    margin: 0;
+    padding: 0;
+}
+/* ----- TABS ------ */
+.metabox-tabs {
+    
+    border-right: 1px solid #eaeaea;
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: block;
+            margin: 0;
+            
+            a {
+                display: block;
+                color: #999;
+                text-decoration: none;
+                padding: 10px 20px;
+                background: #f9f9f9;
+                border: 1px solid #eaeaea;
+                border-width: 0 1px 1px 0;
+                font-size: 12px;
+                position: relative;
+                z-index: 20;
+                margin-right: -1px;
+                outline: 0;
+                box-shadow: none;
+            }
+            
+            &:hover a {
+                color: #777;
+                background: #fcfcfc;
+            }
+            
+            &.active a {
+                color: #333;
+                background: #fff;
+                border-right-color: #fff;
+            }
+        }
+    }
+}
+.tab-content {
+    display: none;
+}
+
+/* ----- FIELDS ------ */
+.dine-metabox-field {
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+}
+.dine-metabox-field:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.dine-metabox-field:first-child {
+    border-top: none;
+}
+.dine-metabox-field > .label-wrapper {
+    width: 40%;
+    max-width: 250px;
+    padding-right: 20px;
+    float: left;
+}
+.dine-metabox-field > .input-wrapper {
+    overflow: hidden;
+}
+.dine-metabox-field .description {
+    font-size: 11px;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+/* Color picker
+--------------------- */
+.dine-colorpicker * {
+    box-sizing: content-box;
+}
+.wp-color-result {
+    margin-bottom: 0;
+}
+
+/* Heading
+--------------------- */
+.metabox-heading h3 {
+    margin: 0;
+    text-transform: uppercase;
+    background: rgba( 0,0,0, .05);
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+/* Radio
+--------------------- */
+.radio-wrapper {
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Image Radio
+--------------------- */
+.field-image_radio input[type="radio"] {
+    display: none;
+}
+.field-image_radio input[type="radio"] + img {
+    padding: 5px;
+    background: white;
+    border: 2px solid transparent;
+    opacity: .4;
+}
+.field-image_radio input[type="radio"] + img:hover {
+    opacity: .8;
+}
+.field-image_radio input[type="radio"]:checked + img {
+    border-color: rgba(0,0,0,.5);
+    opacity: 1;
+}
+
+/* Navigation
+-------------------------------------------------------------------------------------- */
+.description.field-image {
+    float: none;
+    clear: both;
+}
